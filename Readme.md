@@ -1,6 +1,6 @@
 # BuildUp - EventSourcing Helper
 
-BuildUp is a simple library for managing the building of projections from a stream of events.  It currently only has in-memory implementations, but has clear abstractions for implementing key components of an event sourcing application.  Not all of these components are necessary for every Event Sourced Application.  Some are null operators such as if storage is not used.  IE.. See NullStorage class in InMemoryImplementation.
+BuildUp is a simple library for managing the building of projections from a stream of events.  It currently only has in-memory implementations, but has clear abstractions for implementing key components of an event sourced application.  Not all of these components are necessary for every event sourced application.  Some are null operators such as if storage is not used.  IE.. See NullStorage class in InMemoryImplementation.
 
 
 ## Key Components
