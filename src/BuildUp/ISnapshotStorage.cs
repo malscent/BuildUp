@@ -11,10 +11,4 @@ namespace BuildUp
         Task StoreSnapshot(Guid streamId, IBuildUpSnapshot snapshot);
         Task StoreSnapshots(Guid streamId, IEnumerable<IBuildUpSnapshot> snapshots);
     }
-
-    public interface ISnapshotProvider
-    {
-        Task<T> RetrieveSnapshot<T>(Guid streamId) where T : class, new();
-        Task<IEnumerable<IBuildUpSnapshot>> GetSnapshots(Guid streamId);
-    }
 }

@@ -74,7 +74,6 @@ namespace BuildUp.Test
                 t.SetEventStorage(eStorage);
                 t.SetSnapshotProvider(sStorage);
                 t.SetSnapshotStorage(sStorage);
-                t.RegisterProjection<RandomProjection>().CreatedBy<RandomEvent>();
             });
             var @event = new BuildUpEvent<RandomEvent>
             {
